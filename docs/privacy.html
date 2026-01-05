@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - SMS Forward</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .privacy-page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .page-header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .last-updated {
+            color: var(--gray);
+            font-size: 1rem;
+            font-style: italic;
+        }
+        
+        .privacy-content {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .privacy-content h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin: 2.5rem 0 1rem 0;
+            padding-bottom: 0.75rem;
+            border-bottom: 3px solid var(--gray-lighter);
+        }
+        
+        .privacy-content h2:first-child {
+            margin-top: 0;
+        }
+        
+        .privacy-content p {
+            color: var(--gray);
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        
+        .privacy-content ul {
+            margin: 1rem 0 1.5rem 1.5rem;
+            color: var(--gray);
+        }
+        
+        .privacy-content li {
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        
+        .privacy-content strong {
+            color: var(--dark);
+            font-weight: 600;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        
+        .highlight-box p {
+            margin: 0;
+            color: var(--dark-alt);
+        }
+        
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--gray-lighter);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .data-table th {
+            background: var(--dark);
+            color: var(--white);
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .data-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--gray-light);
+            color: var(--gray);
+        }
+        
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .contact-section {
+            background: var(--gray-lighter);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 2.5rem;
+            text-align: center;
+        }
+        
+        .contact-section h3 {
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">📱</span>
+                <span class="logo-text">SMS Forward</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="setup.html">Setup Guide</a></li>
+                <li><a href="help.html">How to Use</a></li>
+                <li><a href="privacy.html" class="active">Privacy</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="privacy-page">
+        <div class="page-header">
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last updated: December 26, 2024</p>
+        </div>
+
+        <div class="privacy-content">
+            <h2>Overview</h2>
+            <p>
+                SMS Forward is designed with your privacy as a top priority. This policy explains what data we collect, 
+                how we use it, and your rights regarding your information.
+            </p>
+            
+            <div class="highlight-box">
+                <p><strong>🔒 Our Core Promise:</strong> We NEVER store your SMS message content on our servers. 
+                Messages are forwarded in real-time and immediately discarded.</p>
+            </div>
+
+            <h2>Information We Collect</h2>
+            
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>What We Collect</th>
+                        <th>Why We Need It</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Authentication</strong></td>
+                        <td>GitHub/Google profile (name, email, username)</td>
+                        <td>To create your account and authenticate requests</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SMS Metadata</strong></td>
+                        <td>Sender phone number, timestamp</td>
+                        <td>For logging and debugging (not message content)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Forwarding Rules</strong></td>
+                        <td>Message patterns, email/Telegram destinations</td>
+                        <td>To know where and when to forward messages</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Access Credentials</strong></td>
+                        <td>Encrypted authentication tokens</td>
+                        <td>To securely authenticate API requests from your phone</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>What We Do NOT Collect</h2>
+            <ul>
+                <li><strong>SMS Message Content:</strong> Message text is never stored on our servers</li>
+                <li><strong>Contact Lists:</strong> We don't access your phone's contacts</li>
+                <li><strong>Location Data:</strong> No GPS or location tracking</li>
+                <li><strong>Device Information:</strong> No device fingerprinting or tracking</li>
+                <li><strong>Browsing History:</strong> No tracking of your web activity</li>
+            </ul>
+
+            <h2>How We Use Your Data</h2>
+            <p>Your information is used exclusively for:</p>
+            <ul>
+                <li><strong>Message Forwarding:</strong> Delivering SMS to your configured Telegram or email</li>
+                <li><strong>Authentication:</strong> Verifying API requests from your mobile app</li>
+                <li><strong>Service Improvement:</strong> Analyzing anonymous usage patterns to improve reliability</li>
+                <li><strong>Debugging:</strong> Troubleshooting failed message deliveries (metadata only)</li>
+            </ul>
+
+            <h2>Data Storage & Security</h2>
+            
+            <h3>Encryption</h3>
+            <ul>
+                <li><strong>In Transit:</strong> All data transmitted over HTTPS/TLS 1.3</li>
+                <li><strong>At Rest:</strong> Passwords hashed with bcrypt (industry standard)</li>
+                <li><strong>Tokens:</strong> Stored encrypted in database</li>
+            </ul>
+            
+            <h3>Data Retention</h3>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>Retention Period</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SMS Message Content</td>
+                        <td><strong>0 seconds</strong> - Never stored</td>
+                    </tr>
+                    <tr>
+                        <td>Message Metadata (sender, timestamp)</td>
+                        <td>30 days, then automatically deleted</td>
+                    </tr>
+                    <tr>
+                        <td>User Account Data</td>
+                        <td>Until you delete your account</td>
+                    </tr>
+                    <tr>
+                        <td>Forwarding Rules</td>
+                        <td>Until you delete them or your account</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Third-Party Services</h2>
+            <p>We use the following trusted third-party services:</p>
+            <ul>
+                <li><strong>Telegram API:</strong> For forwarding messages to Telegram (only if you configure Telegram forwarding)</li>
+                <li><strong>Resend:</strong> For email delivery (only if you configure email forwarding)</li>
+                <li><strong>DigitalOcean:</strong> Cloud server hosting with encryption at rest</li>
+                <li><strong>GitHub/Google OAuth:</strong> For secure authentication (no passwords stored by us)</li>
+            </ul>
+            
+            <p>These services have their own privacy policies. We only share the minimum necessary data with them to provide the service.</p>
+
+            <h2>Your Rights</h2>
+            <p>You have complete control over your data:</p>
+            <ul>
+                <li><strong>Access:</strong> View all your forwarding rules anytime in the mobile app</li>
+                <li><strong>Modify:</strong> Edit or delete forwarding rules at any time</li>
+                <li><strong>Export:</strong> Contact us for a copy of your data (metadata only)</li>
+                <li><strong>Delete:</strong> Use the "Deactivate" button to permanently delete all your data</li>
+                <li><strong>Regenerate Token:</strong> Get a new authentication token anytime</li>
+            </ul>
+
+            <h2>Data Sharing</h2>
+            <p><strong>We do NOT sell, rent, or share your personal information with third parties.</strong></p>
+            
+            <p>Data is only shared when:</p>
+            <ul>
+                <li>You explicitly configure it (e.g., forwarding to your email means sharing with email provider)</li>
+                <li>Required by law (court orders, legal obligations)</li>
+                <li>Necessary to prevent fraud or security threats</li>
+            </ul>
+
+            <h2>Children's Privacy</h2>
+            <p>
+                SMS Forward is not intended for users under 18 years of age. We do not knowingly collect 
+                information from children. If you believe a child has provided us with personal information, 
+                please contact us immediately.
+            </p>
+
+            <h2>Changes to This Policy</h2>
+            <p>
+                We may update this privacy policy from time to time. Changes will be posted on this page 
+                with an updated "Last updated" date. Continued use of the service after changes constitutes 
+                acceptance of the updated policy.
+            </p>
+
+            <h2>GDPR Compliance (EU Users)</h2>
+            <p>If you are located in the European Union, you have additional rights under GDPR:</p>
+            <ul>
+                <li>Right to access your personal data</li>
+                <li>Right to rectification of inaccurate data</li>
+                <li>Right to erasure ("right to be forgotten")</li>
+                <li>Right to data portability</li>
+                <li>Right to object to processing</li>
+            </ul>
+            
+            <p>To exercise these rights, contact us at the email below.</p>
+
+            <div class="contact-section">
+                <h3>Questions About Privacy?</h3>
+                <p style="color: var(--gray);">
+                    If you have any questions about this privacy policy or how we handle your data, 
+                    we're happy to help.
+                </p>
+                <p style="margin: 1.5rem 0;">
+                    <strong>Email:</strong> <a href="mailto:gautamajey.official@gmail.com" style="color: var(--primary); text-decoration: none;">gautamajey.official@gmail.com</a><br>
+                    <strong>Developer:</strong> GAK Solutions
+                </p>
+                <p style="color: var(--gray); font-size: 0.95rem; font-style: italic;">
+                    This app is designed for personal use to forward OTP and important SMS messages securely.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>SMS Forward</h4>
+                    <p>Secure SMS forwarding for modern communication</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="setup.html">Setup Guide</a></li>
+                        <li><a href="help.html">How to Use</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="mailto:gautamajey.official@gmail.com">Email Support</a></li>
+                        <li><a href="https://github.com/yourusername/sms-forward">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GAK Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
