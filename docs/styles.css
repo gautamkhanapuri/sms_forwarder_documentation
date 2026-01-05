@@ -173,6 +173,18 @@ body {
   }
 }
 
+.hero-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  color: #92400e;
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  border: 2px solid #fbbf24;
+}
+
 .hero-title {
   font-size: 3.5rem;
   font-weight: 700;
@@ -195,6 +207,37 @@ body {
   color: var(--gray);
   margin-bottom: var(--spacing-xl);
   line-height: 1.8;
+}
+
+.hero-highlight {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: var(--spacing-xl);
+  border-left: 4px solid var(--accent);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.highlight-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.hero-highlight strong {
+  display: block;
+  color: var(--dark);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-highlight p {
+  color: var(--gray);
+  margin: 0;
+  line-height: 1.6;
 }
 
 .cta-buttons {
