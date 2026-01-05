@@ -1,6 +1,6 @@
 # SMS Forward - Privacy Policy
 
-**Last updated:** December 26, 2024
+**Last updated:** January 05, 2026
 
 ## Overview
 SMS Forward is a personal utility app that forwards SMS messages from your Android device to Telegram or email.
@@ -17,8 +17,8 @@ SMS Forward is a personal utility app that forwards SMS messages from your Andro
 - Log forwarding activity for debugging (metadata only, not message content)
 
 ## Data Storage
-- **Message Content:** NOT stored on servers (forwarded in real-time only)
-- **Metadata:** Sender phone number and timestamp stored for 30 days
+- **Message Content:** stored on servers (forwarded in real-time only)
+- **Metadata:** Sender phone number and timestamp stored 
 - **User Credentials:** Encrypted and stored securely
 
 ## Third-Party Services
@@ -29,18 +29,17 @@ SMS Forward is a personal utility app that forwards SMS messages from your Andro
 ## Data Security
 - All data transmitted over HTTPS
 - Passwords hashed with industry-standard encryption
-- No message content stored permanently
 
 ## Your Rights
 - Delete your account anytime via the app
-- Request data deletion: contact gautamajey@gmail.com
+- Request data deletion: contact gautamajey.official@gmail.com
 - View forwarding history in the app
 
 ## Changes to Policy
 We may update this policy. Changes will be posted here with updated date.
 
 ## Contact
-**Email:** gautamajey@gmail.com  
+**Email:** gautamajey.official@gmail.com  
 **Developer:** GAK Solutions
 
 ---
