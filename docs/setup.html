@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup Guide - SMS Forward</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .setup-page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        .setup-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .setup-header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+        
+        .setup-header p {
+            font-size: 1.25rem;
+            color: var(--gray);
+        }
+        
+        .step-section {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--primary);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            animation: fadeInUp 0.6s ease-out backwards;
+        }
+        
+        .step-section:nth-child(1) { animation-delay: 0.1s; }
+        .step-section:nth-child(2) { animation-delay: 0.2s; }
+        .step-section:nth-child(3) { animation-delay: 0.3s; }
+        .step-section:nth-child(4) { animation-delay: 0.4s; }
+        
+        .step-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .step-badge {
+            background: var(--gradient-primary);
+            color: var(--white);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .step-section h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        
+        .step-section p {
+            color: var(--gray);
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+        
+        .step-section ol {
+            margin-left: 1.5rem;
+            color: var(--gray);
+        }
+        
+        .step-section li {
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        
+        .screenshot-placeholder {
+            background: var(--gray-lighter);
+            border: 2px dashed var(--gray-light);
+            border-radius: 12px;
+            padding: 3rem;
+            text-align: center;
+            color: var(--gray);
+            margin: 1.5rem 0;
+            font-style: italic;
+        }
+        
+        .code-block {
+            background: var(--dark);
+            color: #a0d911;
+            padding: 1.5rem;
+            border-radius: 12px;
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            overflow-x: auto;
+            margin: 1rem 0;
+            box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #f093fb30 0%, #f5576c30 100%);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        
+        .tip-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 4px solid var(--accent);
+            padding: 1.25rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        
+        .tip-box strong {
+            color: var(--dark);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">📱</span>
+                <span class="logo-text">SMS Forward</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="setup.html" class="active">Setup Guide</a></li>
+                <li><a href="help.html">How to Use</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="setup-page">
+        <div class="setup-header">
+            <h1>Setup Guide</h1>
+            <p>Get started with SMS Forward in 5 simple steps</p>
+        </div>
+
+        <div class="step-section">
+            <div class="step-header">
+                <div class="step-badge">1</div>
+                <h2>Download the Mobile App</h2>
+            </div>
+            <p>Install SMS Forward from the Google Play Store on your Android device.</p>
+            
+            <div class="screenshot-placeholder">
+                📸 Screenshot: Play Store listing
+            </div>
+            
+            <ol>
+                <li>Open Google Play Store on your Android phone</li>
+                <li>Search for "SMS Forward by GAK Solutions"</li>
+                <li>Tap "Install" and wait for download to complete</li>
+                <li>Grant required permissions when prompted (SMS reading access)</li>
+            </ol>
+            
+            <div class="tip-box">
+                <strong>💡 Tip:</strong>
+                The app requires Android 8.0 (API 26) or higher. Make sure your device is updated to the latest Android version for best performance.
+            </div>
+        </div>
+
+        <div class="step-section">
+            <div class="step-header">
+                <div class="step-badge">2</div>
+                <h2>Login to Get Your Token</h2>
+            </div>
+            <p>Visit the SMS Forward web portal and authenticate to generate your secure token.</p>
+            
+            <ol>
+                <li>Go to <a href="https://pattern.gaks.solutions" target="_blank" class="highlight">pattern.gaks.solutions</a></li>
+                <li>Click "Login with GitHub" or "Login with Google"</li>
+                <li>Authorize the application to access your basic profile information</li>
+                <li>You'll be redirected back to the portal showing your profile</li>
+            </ol>
+            
+            <div class="screenshot-placeholder">
+                📸 Screenshot: Login page with GitHub and Google buttons
+            </div>
+        </div>
+
+        <div class="step-section">
+            <div class="step-header">
+                <div class="step-badge">3</div>
+                <h2>Register for SMS Forward Service</h2>
+            </div>
+            <p>Once logged in, click the <span class="highlight">"Register"</span> button to create your SMS Forward account.</p>
+            
+            <div class="screenshot-placeholder">
+                📸 Screenshot: Profile page with Register button
+            </div>
+            
+            <p>After clicking Register:</p>
+            <ol>
+                <li>A unique authentication token will be generated for you</li>
+                <li>The token will appear in a text box with a copy button</li>
+                <li>Click <span class="highlight">"📋 Copy"</span> to copy the token to your clipboard</li>
+            </ol>
+            
+            <div class="code-block">
+                Your token will look like this:<br><br>
+                YWpleWJrOiNrYjMyMSEj
+            </div>
+            
+            <div class="tip-box">
+                <strong>⚠️ Important:</strong>
+                Keep your token secure! This token authenticates all forwarding requests from your phone. Don't share it with anyone. If compromised, use the "Regenerate Token" button to get a new one.
+            </div>
+        </div>
+
+        <div class="step-section">
+            <div class="step-header">
+                <div class="step-badge">4</div>
+                <h2>Configure the Mobile App</h2>
+            </div>
+            <p>Open the SMS Forward app on your Android device and enter your token.</p>
+            
+            <div class="screenshot-placeholder">
+                📸 Screenshot: Mobile app token input screen
+            </div>
+            
+            <ol>
+                <li>Open SMS Forward app on your phone</li>
+                <li>On the configuration screen, paste your copied token</li>
+                <li>Tap "Verify Token" - you should see a success message</li>
+                <li>The app will save your credentials securely</li>
+            </ol>
+        </div>
+
+        <div class="step-section">
+            <div class="step-header">
+                <div class="step-badge">5</div>
+                <h2>Set Up Telegram (Optional)</h2>
+            </div>
+            <p>If you want to forward messages to Telegram, complete this additional setup.</p>
+            
+            <ol>
+                <li>Open Telegram and search for <span class="highlight">@gaksmsbot</span></li>
+                <li>Send the <code>/start</code> command to the bot</li>
+                <li>The bot will reply with your Telegram username and chat ID</li>
+                <li>In the SMS Forward mobile app, enter your Telegram username (e.g., <code>@yourusername</code>)</li>
+                <li>Configure which messages should forward to Telegram</li>
+            </ol>
+            
+            <div class="screenshot-placeholder">
+                📸 Screenshot: Telegram bot /start command and response
+            </div>
+            
+            <div class="screenshot-placeholder">
+                📸 Screenshot: Mobile app Telegram configuration
+            </div>
+        </div>
+
+        <div class="step-section" style="border-left-color: var(--secondary);">
+            <div class="step-header">
+                <div class="step-badge" style="background: var(--gradient-success);">✓</div>
+                <h2>You're All Set!</h2>
+            </div>
+            <p>SMS Forward is now active. Any incoming SMS matching your configured rules will automatically forward to your chosen destination.</p>
+            
+            <div style="background: var(--gray-lighter); padding: 1.5rem; border-radius: 12px; margin-top: 1.5rem;">
+                <p style="margin: 0;"><strong>Next Steps:</strong></p>
+                <ul style="margin: 1rem 0 0 1.5rem; color: var(--gray);">
+                    <li>Learn how to <a href="help.html" style="color: var(--primary); text-decoration: none;">create forwarding rules</a></li>
+                    <li>Test your setup by sending yourself an SMS</li>
+                    <li>Adjust filters to forward only specific messages</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="help.html" class="btn btn-primary">Continue to User Guide →</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>SMS Forward</h4>
+                    <p>Secure SMS forwarding for modern communication</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="setup.html">Setup Guide</a></li>
+                        <li><a href="help.html">How to Use</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="mailto:gautamajey.official@gmail.com">Email Support</a></li>
+                        <li><a href="https://github.com/yourusername/sms-forward">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GAK Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

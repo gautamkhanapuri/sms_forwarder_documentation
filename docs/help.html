@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Use - SMS Forward</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .help-page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .page-header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+        
+        .page-header p {
+            font-size: 1.25rem;
+            color: var(--gray);
+        }
+        
+        .help-section {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .help-section h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .section-icon {
+            font-size: 2rem;
+        }
+        
+        .help-section h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--dark-alt);
+            margin: 2rem 0 1rem 0;
+        }
+        
+        .help-section p, .help-section li {
+            color: var(--gray);
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+        
+        .help-section ul, .help-section ol {
+            margin: 1rem 0 1rem 1.5rem;
+        }
+        
+        .help-section li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .config-card {
+            background: var(--gray-lighter);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .config-card h4 {
+            color: var(--dark);
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+        
+        .warning-box {
+            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+            border-left: 4px solid #dc2626;
+            padding: 1.25rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        
+        .warning-box strong {
+            color: #991b1b;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .info-box {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border-left: 4px solid var(--primary);
+            padding: 1.25rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        
+        .info-box strong {
+            color: var(--primary-dark);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .example-rule {
+            background: var(--dark);
+            color: var(--white);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            font-family: var(--font-mono);
+            margin: 1rem 0;
+            font-size: 0.95rem;
+        }
+        
+        .example-label {
+            color: var(--secondary);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">📱</span>
+                <span class="logo-text">SMS Forward</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="setup.html">Setup Guide</a></li>
+                <li><a href="help.html" class="active">How to Use</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="help-page">
+        <div class="page-header">
+            <h1>How to Use SMS Forward</h1>
+            <p>Master the app with this comprehensive guide</p>
+        </div>
+
+        <!-- Creating Forward Rules -->
+        <div class="help-section">
+            <h2><span class="section-icon">⚙️</span>Creating Forward Rules</h2>
+            <p>Forward rules determine which SMS messages get forwarded and where they go.</p>
+            
+            <div class="screenshot-placeholder">
+                📸 Screenshot: Forward configurations list screen
+            </div>
+            
+            <h3>Adding a New Rule</h3>
+            <ol>
+                <li>Open the SMS Forward app</li>
+                <li>Tap the <strong>+</strong> (floating action button) at the bottom right</li>
+                <li>Fill in the rule details:</li>
+            </ol>
+            
+            <div class="config-card">
+                <h4>Message Pattern</h4>
+                <p>Enter the text that triggers forwarding. Messages containing this text will be forwarded.</p>
+                <div class="example-rule">
+                    <span class="example-label">Example:</span> OTP
+                </div>
+                <p style="font-size: 0.95rem; margin-top: 0.5rem;">
+                    This will forward any message containing "OTP" - like "Your OTP is 847392"
+                </p>
+            </div>
+            
+            <div class="config-card">
+                <h4>From (Optional)</h4>
+                <p>Specify a sender to narrow down which messages are forwarded.</p>
+                <div class="example-rule">
+                    <span class="example-label">Example:</span> AMAZON
+                </div>
+                <p style="font-size: 0.95rem; margin-top: 0.5rem;">
+                    Only forward messages from senders containing "AMAZON"
+                </p>
+            </div>
+            
+            <div class="config-card">
+                <h4>Destination</h4>
+                <p>Choose where to forward: Email or Telegram (select one).</p>
+                <ul style="margin-left: 1.5rem;">
+                    <li><strong>Email:</strong> Enter a valid email address (e.g., you@gmail.com)</li>
+                    <li><strong>Telegram:</strong> Enter your username (must start with @)</li>
+                </ul>
+            </div>
+            
+            <h3>Managing Rules</h3>
+            <ul>
+                <li><strong>Edit:</strong> Tap the pencil icon on any rule to modify it</li>
+                <li><strong>Delete:</strong> Tap the trash icon and confirm deletion</li>
+                <li><strong>Toggle:</strong> Use the switch to enable/disable rules without deleting</li>
+                <li><strong>View Stats:</strong> See how many messages each rule has forwarded (shown on the card)</li>
+            </ul>
+            
+            <div class="screenshot-placeholder">
+                📸 Screenshot: Rule card showing edit, delete, toggle options
+            </div>
+        </div>
+
+        <!-- Forwarding to Email -->
+        <div class="help-section">
+            <h2><span class="section-icon">✉️</span>Forwarding to Email</h2>
+            
+            <p>To forward SMS to your email address:</p>
+            <ol>
+                <li>Create a new forward rule</li>
+                <li>Enter the message pattern to match</li>
+                <li>Select <strong>Email</strong> as the destination type</li>
+                <li>Enter your email address</li>
+                <li>Tap <strong>Save</strong></li>
+            </ol>
+            
+            <div class="info-box">
+                <strong>📧 Email Format:</strong>
+                Forwarded emails will have the subject line "SMS Forward - from: [sender] on [date]" and the message body will contain the full SMS text.
+            </div>
+            
+            <div class="screenshot-placeholder">
+                📸 Screenshot: Email forwarding configuration
+            </div>
+        </div>
+
+        <!-- Forwarding to Telegram -->
+        <div class="help-section">
+            <h2><span class="section-icon">💬</span>Forwarding to Telegram</h2>
+            
+            <p>To forward SMS to your Telegram account:</p>
+            
+            <h3>First-Time Setup</h3>
+            <ol>
+                <li>Open Telegram and search for <code>@gaksmsbot</code></li>
+                <li>Send <code>/start</code> command</li>
+                <li>The bot confirms registration and shows your username</li>
+            </ol>
+            
+            <div class="screenshot-placeholder">
+                📸 Screenshot: Telegram bot conversation
+            </div>
+            
+            <h3>Configure in App</h3>
+            <ol>
+                <li>In SMS Forward app, create a new rule</li>
+                <li>Enter the message pattern</li>
+                <li>Select <strong>Telegram</strong> as destination</li>
+                <li>Enter your Telegram username (including the @ symbol)</li>
+                <li>Tap <strong>Save</strong></li>
+            </ol>
+            
+            <div class="warning-box">
+                <strong>⚠️ Important:</strong>
+                You MUST send /start to @gaksmsbot before creating Telegram forwarding rules. Without this step, messages cannot be delivered.
+            </div>
+            
+            <h3>Telegram Bot Commands</h3>
+            <div class="example-rule">
+                <span class="example-label">/start</span> - Activate message forwarding<br>
+                <span class="example-label">/stop</span> - Temporarily stop receiving messages<br>
+                <span class="example-label">/help</span> - Show help information<br>
+                <span class="example-label">/status</span> - Check your registration status
+            </div>
+        </div>
+
+        <!-- Common Use Cases -->
+        <div class="help-section">
+            <h2><span class="section-icon">💡</span>Common Use Cases</h2>
+            
+            <h3>1. Forward All OTPs</h3>
+            <div class="config-card">
+                <p><strong>Message Pattern:</strong> OTP</p>
+                <p><strong>From:</strong> Leave empty</p>
+                <p><strong>Destination:</strong> Your email or Telegram</p>
+                <p style="margin-top: 1rem; font-size: 0.95rem;">
+                    ✅ Result: Any message containing "OTP" will be forwarded
+                </p>
+            </div>
+            
+            <h3>2. Forward Bank Alerts Only</h3>
+            <div class="config-card">
+                <p><strong>Message Pattern:</strong> credited</p>
+                <p><strong>From:</strong> HDFC</p>
+                <p><strong>Destination:</strong> Your email</p>
+                <p style="margin-top: 1rem; font-size: 0.95rem;">
+                    ✅ Result: Only HDFC bank transaction messages will be forwarded
+                </p>
+            </div>
+            
+            <h3>3. Multiple Destinations</h3>
+            <div class="config-card">
+                <p>Create separate rules for the same message pattern with different destinations:</p>
+                <ul style="margin: 1rem 0 0 1.5rem;">
+                    <li><strong>Rule 1:</strong> Pattern "verification" → Email</li>
+                    <li><strong>Rule 2:</strong> Pattern "verification" → Telegram</li>
+                </ul>
+                <p style="margin-top: 1rem; font-size: 0.95rem;">
+                    ✅ Result: Verification codes sent to both email AND Telegram
+                </p>
+            </div>
+        </div>
+
+        <!-- Troubleshooting -->
+        <div class="help-section">
+            <h2><span class="section-icon">🔧</span>Troubleshooting</h2>
+            
+            <h3>Messages Not Forwarding?</h3>
+            <ul>
+                <li><strong>Check Internet Connection:</strong> The app requires internet to send messages</li>
+                <li><strong>Verify Token:</strong> Make sure your authentication token is valid (check in app settings)</li>
+                <li><strong>Check Rule Status:</strong> Ensure the rule is enabled (switch is ON)</li>
+                <li><strong>Pattern Matching:</strong> Message must contain the exact pattern text (case-sensitive)</li>
+                <li><strong>Telegram Setup:</strong> Verify you've sent /start to @gaksmsbot</li>
+            </ul>
+            
+            <h3>Token Issues?</h3>
+            <div class="info-box">
+                <strong>Lost Your Token?</strong>
+                Visit <a href="https://pattern.gaks.solutions" style="color: var(--primary);">pattern.gaks.solutions</a>, 
+                login with GitHub/Google, and click "Regenerate Token" to get a new one.
+            </div>
+            
+            <h3>Email Not Arriving?</h3>
+            <ul>
+                <li>Check your spam/junk folder</li>
+                <li>Verify the email address is correct in your rule</li>
+                <li>Wait 1-2 minutes (email delivery can be slightly delayed)</li>
+            </ul>
+            
+            <h3>Telegram Not Working?</h3>
+            <ul>
+                <li>Ensure your Telegram username is correct (must include @)</li>
+                <li>Verify you've sent /start to @gaksmsbot recently</li>
+                <li>Try sending /stop followed by /start to refresh your registration</li>
+            </ul>
+        </div>
+
+        <!-- Account Management -->
+        <div class="help-section">
+            <h2><span class="section-icon">👤</span>Managing Your Account</h2>
+            
+            <h3>Regenerating Your Token</h3>
+            <p>If you suspect your token has been compromised or you simply want a fresh token:</p>
+            <ol>
+                <li>Visit <a href="https://pattern.gaks.solutions" style="color: var(--primary);">pattern.gaks.solutions</a></li>
+                <li>Login with GitHub or Google</li>
+                <li>Click <strong>"Regenerate Token"</strong></li>
+                <li>Copy the new token</li>
+                <li>Update the token in your SMS Forward mobile app</li>
+            </ol>
+            
+            <div class="warning-box">
+                <strong>⚠️ Note:</strong>
+                Regenerating your token will invalidate the old one. Make sure to update the mobile app immediately after regeneration.
+            </div>
+            
+            <h3>Deactivating Your Account</h3>
+            <p>To stop using SMS Forward and delete all your data:</p>
+            <ol>
+                <li>Login to the web portal</li>
+                <li>Click <strong>"Deactivate"</strong></li>
+                <li>Confirm the warning dialog</li>
+                <li>Your account will be permanently deleted from our servers</li>
+                <li>Uninstall the mobile app if desired</li>
+            </ol>
+            
+            <div class="info-box">
+                <strong>🔒 Privacy Guarantee:</strong>
+                All your forwarding rules and message logs are immediately deleted. This action cannot be undone.
+            </div>
+        </div>
+
+        <!-- Best Practices -->
+        <div class="help-section">
+            <h2><span class="section-icon">⭐</span>Best Practices</h2>
+            
+            <ul>
+                <li><strong>Be Specific with Patterns:</strong> Use unique keywords to avoid forwarding unwanted messages</li>
+                <li><strong>Use the "From" Filter:</strong> Add sender information to create more precise rules</li>
+                <li><strong>Test Your Rules:</strong> Send yourself a test SMS to verify the rule works</li>
+                <li><strong>Keep Token Secure:</strong> Don't share your authentication token with anyone</li>
+                <li><strong>Regular Cleanup:</strong> Disable or delete rules you no longer use</li>
+                <li><strong>Monitor Stats:</strong> Check the message count on each rule card to see which rules are active</li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--gray-lighter); border-radius: 12px;">
+            <h3 style="color: var(--dark); margin-bottom: 1rem;">Need More Help?</h3>
+            <p style="color: var(--gray); margin-bottom: 1.5rem;">
+                Can't find what you're looking for? We're here to help.
+            </p>
+            <a href="mailto:gautamajey.official@gmail.com" class="btn btn-primary">Contact Support</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>SMS Forward</h4>
+                    <p>Secure SMS forwarding for modern communication</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="setup.html">Setup Guide</a></li>
+                        <li><a href="help.html">How to Use</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="mailto:gautamajey.official@gmail.com">Email Support</a></li>
+                        <li><a href="https://github.com/yourusername/sms-forward">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GAK Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
