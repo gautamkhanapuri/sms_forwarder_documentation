@@ -7,3 +7,8 @@ Improvements and updates to the mobile application:
 6. Improve forwarded message format to telegram. Right now it simply copy-pastes the content. Sender, date time should nicely formatted.
 7. Improve user experience. When new user joins. Give instructions, get them to create pin, setup biometric and redirect to browser -  the website so that they can login using sso, generate token and and come back to the website to add token.
 8. "From" option is not very intuitive. Create a rule on what is matched first, content or from.
+
+
+Improvements to documentation:
+1. Write the documentation for new features.
+2. Create a how to use video and embed it on the webiste
