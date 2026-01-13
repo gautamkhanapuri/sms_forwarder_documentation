@@ -1,0 +1,9 @@
+Improvements and updates to the mobile application:
+1. Create a toggle to enable/disable case sensitive matching.
+2. Add a help button on all mobile app pages which links to help page.
+3. Upon opening the app first, ask to set either biometric or pin. Right now it is predefined to 1234.
+4. A way to forward all messages. And keep all other active. Maybe there can be a smart way to filter out sending out repeated messages
+5. Allow option to forward to both email and telegram.
+6. Improve forwarded message format to telegram. Right now it simply copy-pastes the content. Sender, date time should nicely formatted.
+7. Improve user experience. When new user joins. Give instructions, get them to create pin, setup biometric and redirect to browser -  the website so that they can login using sso, generate token and and come back to the website to add token.
+8. "From" option is not very intuitive. Create a rule on what is matched first, content or from.
